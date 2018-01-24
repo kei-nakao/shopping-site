@@ -6,6 +6,10 @@ html {
   font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Verdana, "ＭＳ Ｐゴシック", sans-serif;
   background-color: #f9f8f6; }
 
+p {
+  font-size: 12px;
+  font-size: 1.2rem; }
+
 /*header*/
 #header {
   margin-top: 30px;
@@ -82,6 +86,13 @@ h2 {
       width: calc( ( 100% - 4px) / 3);
       box-sizing: border-box;
       margin-bottom: 2px; }
+      #new_items .item_container .item_box p,
+      #popular .item_container .item_box p,
+      #cate_items .item_container .item_box p,
+      #recent .item_container .item_box p {
+        text-align: left;
+        font-size: 12px;
+        font-size: 1.2rem; }
   #new_items .new_title img,
   #new_items .popular_title img,
   #new_items .recent_title img,
@@ -114,14 +125,14 @@ h2 {
   #guide .guide_left h3,
   #guide .guide_right h3 {
     color: #887f69;
-    font-size: 20px;
-    font-size: 2rem;
+    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: bold; }
   #guide .guide_left h4,
   #guide .guide_right h4 {
     color: #887f69;
-    font-size: 16px;
-    font-size: 1.6rem;
+    font-size: 12px;
+    font-size: 1.2rem;
     font-weight: bold;
     margin: 10px 0; }
   #guide .guide_left img,
@@ -131,7 +142,8 @@ h2 {
 #page_navi {
   background-color: #e8e4da;
   padding: 5px;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  border-radius: 2px; }
   #page_navi img {
     max-width: 100%;
     margin-right: 5px;
@@ -273,26 +285,36 @@ h2 {
     #product_items #item_quantity input {
       display: inline-block;
       margin-left: 30px;
-      width: 50%; }
+      width: 50%;
+      border-radius: 0px; }
   #product_items #tocart {
     text-align: center; }
   #product_items #item_explain h3 {
     color: #887f69;
-    font-size: 20px;
-    font-size: 2rem;
+    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: bold; }
   #product_items #item_explain h3.explain_title {
     border-bottom: 1px solid #887f69;
     padding-bottom: 20px; }
+  #product_items #item_explain p {
+    font-size: 14px;
+    font-size: 1.4rem; }
   #product_items #item_explain table {
     color: #887f69;
     table-layout: auto;
     border: 1px solid #e8e4da;
-    width: 100%; }
+    width: 100%;
+    font-size: 12px;
+    font-size: 1.2rem; }
     #product_items #item_explain table th {
       background-color: #f9f9f5;
       text-align: center;
-      border-right: 1px solid #e8e4da; }
+      border-right: 1px solid #e8e4da;
+      padding-left: 20px;
+      padding-right: 20px; }
+    #product_items #item_explain table td {
+      text-align: left; }
 
 /* sidebar */
 #sidebar #item_search {
@@ -307,7 +329,8 @@ h2 {
       background-color: #eeeeee;
       color: #b5b5b5;
       font-style: italic;
-      border: none; }
+      border: none;
+      border-radius: 0px; }
     #sidebar #item_search .search img {
       position: absolute;
       top: 10px;

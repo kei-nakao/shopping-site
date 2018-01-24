@@ -24,6 +24,10 @@ html {
     font-size: ($size / $base) * 1rem;
 }
 
+p {
+    @include fontsize(12);
+}
+
 
 /*header*/
 
@@ -130,6 +134,11 @@ h2 {
             width: calc( ( 100% - 4px) / 3);
             box-sizing: border-box;
             margin-bottom: 2px;
+            
+            p {
+                text-align: left;
+                @include fontsize(12);
+            }
         }
     }
 
@@ -166,13 +175,13 @@ h2 {
 
     h3 {
         color: $subColor;
-        @include fontsize(20);
+        @include fontsize(16);
         font-weight: bold;
     }
 
     h4 {
         color: $subColor;
-        @include fontsize(16);
+        @include fontsize(12);
         font-weight: bold;
         margin: 10px 0;
     }
@@ -186,6 +195,7 @@ h2 {
     background-color: $subColor2;
     padding: 5px;
     margin-bottom: 10px;
+    border-radius: 2px;
 
     img {
         max-width: 100%;
@@ -328,7 +338,7 @@ h2 {
                 border-bottom: 1px solid $subColor2;
                 border-right: 1px solid $subColor2;
                 text-align: center;
-            }
+                            }
 
             td {
                 border-bottom: 1px solid $subColor2;
@@ -380,6 +390,7 @@ h2 {
             display: inline-block;
             margin-left: 30px;
             width: 50%;
+            border-radius: 0px;
         }
     }
 
@@ -390,7 +401,7 @@ h2 {
     #item_explain {
         h3 {
             color: $subColor;
-            @include fontsize(20);
+            @include fontsize(16);
             font-weight: bold;
         }
 
@@ -399,20 +410,29 @@ h2 {
             padding-bottom: 20px;
 
         }
+        
+        p {
+            @include fontsize(14);
+        }
 
         table {
             color: $subColor;
             table-layout: auto;
             border: 1px solid $subColor2;
             width: 100%;
+            @include fontsize(12);
 
             th {
                 background-color: #f9f9f5;
                 text-align: center;
                 border-right: 1px solid $subColor2;
+                padding-left: 20px;
+                padding-right: 20px;
             }
 
-            td {}
+            td {
+                text-align: left;
+            }
         }
     }
 
@@ -439,6 +459,7 @@ h2 {
                 color: #b5b5b5;
                 font-style: italic;
                 border: none;
+                border-radius: 0px;
             }
 
             img {
